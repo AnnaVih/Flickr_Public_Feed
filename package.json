@@ -1,0 +1,26 @@
+{
+  "name": "Flickr_Feed",
+  "version": "1.0.0",
+  "description": "Simple feed app",
+  "main": "index.js",
+  "scripts": {
+      "build": "webpack --mode production --output ./development/main.js",
+      "dev": "webpack --mode development --output ./production/main.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaVih/Flickr_Public_Feed.git"
+  },
+  "keywords": [],
+  "author": "Anna Vihrogonova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnnaVih/Flickr_Public_Feed/issues"
+  },
+  "homepage": "https://github.com/AnnaVih/Flickr_Public_Feed#readme",
+  "devDependencies": {
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
+  }
+}
