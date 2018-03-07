@@ -40,6 +40,13 @@ Compile and build production version
 $ npm run build
 ```
 
+### Dev
+Compile and build development version
+
+```sh
+$ npm run dev
+```
+
 ## Contributors
 
 Anna Vihrogonova annavihrogonova@yahoo.com
