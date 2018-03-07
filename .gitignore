@@ -1,5 +1,6 @@
 node_modules
-development
+build
 package-lock.json
 .sass-cache/
 *.css.map
+*.map
