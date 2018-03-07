@@ -4,9 +4,9 @@
   "description": "Simple feed app",
   "main": "index.js",
   "scripts": {
-      "build": "webpack --mode production --output ./development/main.js",
-      "dev": "webpack --mode development --output ./production/main.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --output ./development/main.js",
+    "dev": "webpack --mode development --output ./production/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/AnnaVih/Flickr_Public_Feed#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "webpack": "^4.1.0",
     "webpack-cli": "^2.0.10"
   }
