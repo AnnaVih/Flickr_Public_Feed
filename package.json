@@ -4,6 +4,7 @@
   "description": "Simple feed app",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production --output ./development/main.js",
     "dev": "webpack --mode development --output ./production/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +25,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
   }
 }
