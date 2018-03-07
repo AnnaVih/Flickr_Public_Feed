@@ -10,12 +10,16 @@ const extractSass = new ExtractTextPlugin({
 
 //Module  exports
 module.exports = {
+      performance: { 
+        hints: false 
+      },
+
       devServer: {
         contentBase: path.resolve(__dirname, 'production'),
         compress: true
       },
 
-      entry: ['./src/index.js','./src/scss/style.scss'],
+      entry: ['./src/polyfills.js', './src/index.js', './src/scss/style.scss'],
 
       output: {
         filename: 'main.js',
