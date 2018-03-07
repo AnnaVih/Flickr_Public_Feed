@@ -1,5 +1,19 @@
+const path = require('path');
+
 module.exports = {
-    module: {
+  devServer: {
+    contentBase: path.resolve(__dirname, 'production'),
+    compress: true
+  },
+
+  entry: './src/index.js',
+
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'production')
+  },
+
+  module: {
       rules: [
         {
           test: /\.js$/,
