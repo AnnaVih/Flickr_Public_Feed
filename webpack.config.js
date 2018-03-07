@@ -14,16 +14,11 @@ module.exports = {
         hints: false 
       },
 
-      devServer: {
-        contentBase: path.resolve(__dirname, 'production'),
-        compress: true
-      },
-
       entry: ['./src/polyfills.js', './src/index.js', './src/scss/style.scss'],
 
       output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'production')
+        path: path.resolve(__dirname, 'build')
       },
 
       devtool: "source-map", //"source-map"-like devtool is possible
