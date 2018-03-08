@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Flickr feed</title>
+    <script>
+       var modernBrowser = (
+         'fetch' in window &&
+         'assign' in Object
+       );
+       if ( !modernBrowser ) {
+         var scriptElement = document.createElement('script');
+         scriptElement.async = false;
+         scriptElement.src = '/polyfills.bundle.js';
+         document.head.appendChild(scriptElement);
+       }
+    </script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center m-5">Flickr Feed </h1>
+    <main id="feed-wrapper">
+    </main>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
