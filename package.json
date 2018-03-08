@@ -4,8 +4,9 @@
   "description": "Simple feed app",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production   --output ./build/main.js",
+    "dev": "webpack --mode development   --output ./development/main.js",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -5,21 +5,27 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
   filename: "css/style.css",
-  disable: process.env.NODE_ENV === "development"
 });
 
 //Module  exports
 module.exports = {
+      mode: 'development',
+
       performance: { 
         hints: false 
       },
 
-      entry: ['./src/polyfills.js', './src/index.js', './src/scss/style.scss'],
-
-      output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'build')
+      devServer: {
+        contentBase: path.join(__dirname, 'development'),
+        compress: true
       },
+
+      entry: ['./src/polyfills.js', './src/scss/style.scss', './src/index.js',],
+
+      // output: {
+      //   filename: 'main.js',
+      //   path: path.resolve(__dirname, 'development')
+      // },
 
       devtool: "source-map", //"source-map"-like devtool is possible
 
