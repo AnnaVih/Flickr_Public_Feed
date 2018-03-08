@@ -6,9 +6,22 @@ html, body {
     font-size: 14px;
     background: #e6ecf0;
     color: #14171a;
+
+    h1 {
+        color: #ffffff;
+        font-family: 'Raleway',sans-serif; 
+        font-size: 62px; 
+        font-weight: 800; 
+        line-height: 72px;  
+        text-shadow: 2px 1px 1px black
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
     
     a {
-        color: inherit;
+        text-decoration: none;
 
         &:focus, &:visited, &:hover {
             border: none;
@@ -24,7 +37,7 @@ html, body {
 
         .feed-post{
             background: white;
-            height: 160px;
+            height: 180px;
         }
 
         .post-image {
@@ -38,6 +51,47 @@ html, body {
 
         .published-date {
             font-size: 0.9rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html, body {
+        font-size: 11px;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        #feed-wrapper .post-options {
+            margin-top: 32px;
+        }
+
+        #feed-wrapper .feed-post{
+            height: 140px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    html #feed-wrapper {
+        margin-top: 0;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .feed-post{
+            height: 120px;
+        }
+
+        .post-options {
+            margin-top: 15px;
         }
     }
 }
