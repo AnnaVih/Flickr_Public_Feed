@@ -1,4 +1,3 @@
-'use strict';
 
 require('bootstrap');
 
@@ -7,6 +6,10 @@ require('./scss/style.scss');
 //Importing classes
 import { GetPosts } from './fetchData';
 
+import { PostsUI } from './postsUI';
+
+
+const postsUI = new PostsUI();
 
 /***************  GETTING POSTS  ************************
  *************************************************************/
@@ -19,7 +22,7 @@ function getPhotoPosts() {
     //2.Getting data from promises
     photoPosts.get()
               .then((postsResult) => {
-                  console.log(postsResult);
+                postsUI.displayPosts(postsResult);
               })
               //4.1 Catch error in case if no weather data recieved
               .catch((err) => {
