@@ -17,14 +17,14 @@ export class PostsUI {
         postsItem.forEach( post => {
             dynamicPosts += `<div class="row mt-3 feed-post">
                                 <div class="col-4 pl-0">
-                                    <a href="${post}" target="_blank">
+                                    <a href="post.html" target="_blank">
                                         <img class="post-image" src="${post.media.m}" />
                                     </a>
                                 </div>
                                 <div class="col-8">
                                     <div class="row">
                                         <div class="col-12 mt-3">
-                                            <a href="">
+                                            <a href="post.html">
                                                 <h2>${post.title}</h2>
                                             </a>
                                         </div>
